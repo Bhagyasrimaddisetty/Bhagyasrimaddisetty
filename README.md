@@ -1,13 +1,14 @@
-<!-- HEADER WAVE -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Maddisetty%20Bhagya%20Sri&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Software%20Engineer%20%7C%20Full-Stack%20%26%20AI%2FML%20Developer&descAlignY=55&descSize=18" />
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&pause=500&color=00D9FF&background=0D111700&center=true&vCenter=true&width=800&height=80&lines=MADDISETTY+BHAGYA+SRI" alt="Name" />
+  <br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=800&height=40&lines=Software+Engineer+%7C+Full-Stack+%26+AI%2FML+Developer;Java+%E2%80%A2+Spring+Boot+%E2%80%A2+Python+%E2%80%A2+FastAPI+%E2%80%A2+React;Building+Scalable+Systems+%7C+Open+to+Work+%F0%9F%9A%80" alt="Role" />
+</div>
 
-<!-- Visitor Counter -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Bhagyasrimaddisetty&label=Profile+Views&color=blueviolet&style=for-the-badge" />
   <img src="https://img.shields.io/github/followers/Bhagyasrimaddisetty?label=Followers&style=for-the-badge&color=purple" />
 </p>
 
-<!-- Typing SVG -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=800&color=A855F7&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+Bhagya+Sri!+%F0%9F%91%8B;Coffee+%2B+Code+%3D+Magic+%E2%98%95;Building+Scalable+Backend+Systems+%F0%9F%9A%80;Passionate+About+AI+%26+ML+%F0%9F%A4%96;SIH+2024+National+Finalist+%F0%9F%8F%86;CGPA+9.3%2F10+%7C+Published+Researcher+%F0%9F%8C%9F;Open+to+Full-Time+Opportunities!+%F0%9F%92%BC" />
 </p>
@@ -16,7 +17,7 @@
 
 ## 🙋‍♀️ About Me
 
-<img align="right" width="280" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3dGN6dGJwbGJ6bWN6dGVsYzRhZnJ6dGN6dGJwbGJ6bWN6dA/qgQUggAC3Pfv687qPC/giphy.gif" />
+<img align="right" width="280" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
 I'm **Maddisetty Bhagya Sri** — a final-year B.Tech CSE (AI/ML) grad with a **9.3 CGPA**, published AI researcher, and national hackathon finalist who loves turning complex problems into elegant, working software. 🚀
 
@@ -241,22 +242,6 @@ Full auth flow · Real-time DB · Cart & order management
 
 ---
 
-## 📈 Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Bhagyasrimaddisetty&theme=tokyo-night&hide_border=true" />
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Bhagyasrimaddisetty&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=6" />
-</div>
-
----
-
 ## 🐍 Watch My Contributions Get Eaten!
 
 <div align="center">
@@ -266,6 +251,15 @@ Full auth flow · Real-time DB · Cart & order management
     <img src="https://raw.githubusercontent.com/Bhagyasrimaddisetty/Bhagyasrimaddisetty/output/github-contribution-grid-snake.svg" alt="Snake animation" />
   </picture>
 </div>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Bhagyasrimaddisetty&theme=tokyo-night&hide_border=true" />
+</div>
+
 
 ---
 
@@ -311,5 +305,4 @@ const bhagyasri = {
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile!+%E2%9C%A8;Open+to+SWE+%7C+Backend+%7C+AI%2FML+roles+%F0%9F%92%BC;Star+a+repo+if+you+like+my+work!+%E2%AD%90;Let's+build+something+awesome+together!+%F0%9F%A4%9D" />
 </div>
 
-<!-- FOOTER WAVE -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" />
