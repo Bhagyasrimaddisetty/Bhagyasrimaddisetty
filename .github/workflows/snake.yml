@@ -1,227 +1,28 @@
+name: Generate Snake Animation
 
-Skip to content
-Bhagyasrimaddisetty
-Bhagyasrimaddisetty
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Get started with GitHub Actions
-Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. Select a workflow to get started.
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-Skip this and set up a workflow yourself 
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
 
-Search workflows
-Suggested for this repository
-Simple workflow
-By GitHub
+    steps:
+      - name: Generate snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Bhagyasrimaddisetty
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-Simple workflow logo
-Start with a file with the minimum necessary structure.
-
-Deployment
-View all
-Deploy Node.js to Azure Web App
-By Microsoft Azure
-
-Deploy Node.js to Azure Web App logo
-Build a Node.js project and deploy it to an Azure Web App.
-
-Deployment
-Deploy to Amazon ECS
-By Amazon Web Services
-
-Deploy to Amazon ECS logo
-Deploy a container to an Amazon ECS service powered by AWS Fargate or Amazon EC2.
-
-Deployment
-Build and Deploy to GKE
-By Google Cloud
-
-Build and Deploy to GKE logo
-Build a docker container, publish it to Google Container Registry, and deploy to GKE.
-
-Deployment
-Terraform
-By HashiCorp
-
-Terraform logo
-Set up Terraform CLI in your GitHub Actions workflow.
-
-Deployment
-Deploy to Alibaba Cloud ACK
-By Alibaba Cloud
-
-Deploy to Alibaba Cloud ACK logo
-Deploy a container to Alibaba Cloud Container Service for Kubernetes (ACK).
-
-Deployment
-Deploy to IBM Cloud Kubernetes Service
-By IBM
-
-Deploy to IBM Cloud Kubernetes Service logo
-Build a docker container, publish it to IBM Cloud Container Registry, and deploy to IBM Cloud Kubernetes Service.
-
-Deployment
-Tencent Kubernetes Engine
-By Tencent Cloud
-
-Tencent Kubernetes Engine logo
-This workflow will build a docker container, publish and deploy it to Tencent Kubernetes Engine (TKE).
-
-Deployment
-OpenShift
-By Red Hat
-
-OpenShift logo
-Build a Docker-based project and deploy it to OpenShift.
-
-Deployment
-Security
-View all
-CodeQL Analysis
-By GitHub
-
-Security analysis from GitHub for C, C++, C#, Go, Java, JavaScript, TypeScript, Python, Ruby, Kotlin and Swift developers.
-
-Code scanning
-Bearer
-By Bearer
-
-Bearer logo
-Continuously run Bearer code security scanning tool (SAST) to discover, filter and prioritize security and privacy risks.
-
-Code scanning
-OSV Scanner
-By Google
-
-OSV Scanner logo
-Vulnerability scanner for your dependencies using data provided by https://osv.dev
-
-Code scanning
-Haskell Dockerfile Linter
-By GitHub Actions
-
-Haskell Dockerfile Linter logo
-A smarter Dockerfile linter that helps you build best practice Docker images.
-
-Code scanning
-Continuous integration
-View all
-Crystal
-By GitHub Actions
-
-Crystal logo
-Build and test a Crystal project.
-
-Crystal
-Jekyll using Docker image
-By GitHub Actions
-
-Jekyll using Docker image logo
-Package a Jekyll site using the jekyll/builder Docker image.
-
-HTML
-Datadog Synthetics
-By Datadog
-
-Datadog Synthetics logo
-Run Datadog Synthetic tests within your GitHub Actions workflow
-
-JavaScript
-CMake based, single-platform projects
-By GitHub Actions
-
-CMake based, single-platform projects logo
-Build and test a CMake based project on a single-platform.
-
-C
-Automation
-View all
-Manual workflow
-By GitHub Actions
-
-Simple workflow that is manually triggered.
-
-Automation
-Labeler
-By GitHub Actions
-
-Labels pull requests based on the files changed
-
-Automation
-AI issue summary
-By GitHub Actions
-
-Summarizes new issues
-
-Automation
-Stale
-By GitHub Actions
-
-Checks for stale issues and pull requests
-
-Automation
-Pages
-View all
-mdBook
-By GitHub Actions
-
-mdBook logo
-Package a site using mdBook.
-
-Static HTML
-By GitHub Actions
-
-Static HTML logo
-Deploy static files in a repository without a build.
-
-HTML
-Next.js
-By GitHub Actions
-
-Next.js logo
-Package a Next.js site.
-
-Jekyll
-By GitHub Actions
-
-Jekyll logo
-Package a Jekyll site.
-
-Browse all categories
-Deployment
-Security
-Continuous integration
-Automation
-Pages
-Learn more about GitHub Actions
-Getting started and core concepts
-New to Actions? Start here. Learn the core concepts and how to get started.
-
-Configuring and managing workflows
-Create custom workflows to control your project's life cycle processes.
-
-Any language
-Language and framework guides
-Guides for projects written in many programming languages.
-
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
