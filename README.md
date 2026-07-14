@@ -6,7 +6,6 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Bhagyasrimaddisetty&label=Profile+Views&color=blueviolet&style=for-the-badge" />
-  <img src="https://img.shields.io/github/followers/Bhagyasrimaddisetty?label=Followers&style=for-the-badge&color=purple" />
 </p>
 
 <p align="center">
